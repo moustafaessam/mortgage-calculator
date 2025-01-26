@@ -7,7 +7,7 @@ export default function Amount() {
   const form = useFormContext();
   const {
     register,
-    formState: { errors, touchedFields },
+    formState: { errors },
     watch,
     setValue,
   } = form;
