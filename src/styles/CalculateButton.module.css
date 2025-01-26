@@ -1,0 +1,27 @@
+.calcButton {
+  border: none;
+  width: fit-content;
+  height: 5.6rem;
+  padding: 0 var(--spacing-500);
+  background-color: var(--lime);
+  display: flex;
+  gap: var(--spacing-300);
+  border-radius: 999px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.calcButton:hover {
+  background-color: rgba(216, 219, 47, 0.5);
+}
+
+.calcImg {
+  height: 2.4rem;
+}
+
+.calcText {
+  font-family: "Plus Jakarta Sans Bold";
+  font-size: var(--text-preset-3);
+  line-height: 125%;
+  color: var(--slate-900);
+}

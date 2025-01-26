@@ -1,0 +1,22 @@
+.result {
+  padding: var(--spacing-500);
+  border-radius: 2.4rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 40px;
+  background-color: var(--slate-900);
+}
+
+@media (max-width: 768px) {
+  .result {
+    border-radius: 0;
+    border-bottom-left-radius: 2.4rem;
+    border-bottom-right-radius: 2.4rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .result {
+    border-radius: 0;
+    padding: var(--spacing-400) var(--spacing-300);
+  }
+}

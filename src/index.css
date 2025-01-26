@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Plus Jakarta Sans Bold";
+  src: url("/fonts/static/PlusJakartaSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans Medium";
+  src: url("/fonts/static/PlusJakartaSans-Medium.ttf");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body,
+#root {
+  width: fit-content;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--slate-100);
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  /* Colors */
+  --lime: #d8db2f;
+  --slate-900: #133041;
+  --slate-700: #4e6e7e;
+  --slate-500: #6b94a8;
+  --slate-300: #9abed5;
+  --slate-100: #e4f4fd;
+  --white: #ffffff;
+  --red: #d73328;
+  /* Spacing */
+  --spacing-500: 4rem;
+  --spacing-400: 3.2rem;
+  --spacing-300: 2.4rem;
+  --spacing-200: 1.6rem;
+  --spacing-150: 1.2rem;
+  --spacing-100: 0.8rem;
+  /* Font Size */
+  --text-preset-1: 5.6rem;
+  --text-preset-2: 2.4rem;
+  --text-preset-3: 1.8rem;
+  --text-preset-4: 1.6rem;
+  --text-preset-5: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: var(--spacing-500);
+  }
+}
+
+@media (max-width: 420px) {
+  #root {
+    display: block;
+    padding: 0;
+  }
+}
